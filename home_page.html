@@ -1,90 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gamify</title>
-    <style>
-        body {
-            background-color: rgb(0, 0, 0);
-            color: white;
-            margin: 0; 
-        }
-
-        .container {
-            display: flex; 
-            height: 100vh; 
-        }
-
-        .sidebar {
-            margin-top: 110px;
-            width: 200px; 
-            color: white; 
-            padding: 20px; 
-        }
-        .sidebar-heading {
-            height:20px;
-            font-weight: bold;
-            font-family: 'calibri';
-            font-size:30px;
-        }
-        .sidebar-text{
-            font-family: 'calibri';
-            font-size:20px;
-        }
-        .sidebar-icon{
-            width: 20px; 
-            height: 20px; 
-            vertical-align: middle;
-            border-radius: 5px;
-            margin-right:3px;
-
-        }
-
-        .search-bar {
-            width: 900px; 
-            padding: 8px;
-            font-size: 14px;
-            border: 1px solid #ccc;
-            border-radius: 100px;
-            box-sizing: border-box;
-            text-align: center;
-            background: url('images/search_icon_inverted.png') no-repeat 8px center;
-            color: white;
-        }
-
-        .search-bar-div {    
-            text-align: center;
-        }
-        .search-bar:focus{
-            outline: none;
-            background: url('images/search_icon.png') no-repeat 8px center;
-            background-color:white;
-            color:black;
-            
-        }
-
-        .logo {
-            width:10px;
-            height:10px;
-            margin-left: 10px;
-            margin-top: 10px;
-            font-family: 'Courier New', monospace;
-        }
-
-        .ws-heading {
-            margin-top: 50px;
-            font-family: 'Courier New', monospace;
-            font-size: 50px;
-        }
-
-        .main-content {
-            flex: 1; 
-            padding: 20px; 
-            background-color: #000000; 
-            color: rgb(255, 255, 255); 
-        }
-    </style>
 </head>
 <body>
     <div class="logo">
@@ -93,17 +13,32 @@
     
     <div class="search-bar-div">
         <input type="text" placeholder="Search for games" class="search-bar">
+        <div class="login">SIGNUP</div>
+        <div class="login">LOGIN</div>
     </div>
+        
 
     <div class="container">
         <div class="sidebar">
             <div class="side-bar-heading">
                 <p class="sidebar-heading">New releases</p>
                 <p class="sidebar-text"><img src="images/star.png" class='sidebar-icon'>Last 30 Days</p>
-                <p class="sidebar-text">This week</p>
-                <p class="sidebar-text">Next week</p>
+                <p class="sidebar-text"><img src="images/fire.png" class='sidebar-icon'>This week</p>
+                <p class="sidebar-text"><img src="images/forward.png" class='sidebar-icon'>Next week</p>
             </div>
-            
+            <div class="side-bar-heading">
+                <p class="sidebar-heading">Top</p>
+                <p class="sidebar-text"><img src="images/trophy.png" class='sidebar-icon'>Best of the year</p>
+                <p class="sidebar-text"><img src="images/bar.png" class='sidebar-icon'>Popular in 2023</p>
+                <p class="sidebar-text"><img src="images/crown.png" class='sidebar-icon'>All time top 50</p>
+            </div>
+            <div class="side-bar-heading">
+                <p class="sidebar-heading">Platforms</p>
+                <p class="sidebar-text"><img src="images/pc.png" class='sidebar-icon'>PC</p>
+                <p class="sidebar-text"><img src="images/ps4.png" class='sidebar-icon'>PlayStation4</p>
+                <p class="sidebar-text"><img src="images/xbox.png" class='sidebar-icon'>Xbox One</p>
+            </div>
+
                 
         </div>
         
@@ -111,6 +46,226 @@
             <div class="ws-heading">
                 Trending games
             </div>
+            <div class="box-container">
+                <div class="boxes">
+                    
+                    <img src="images/game_covers/wukong2.jpg" class="game-covers">
+                    <img src="images/pcpsxbox-bg.png " class="available">
+                    <br>
+                    <p class="game-title">Black Myth: Wukong</p>
+                    <p class="game-description"style="white-space: pre;">Release date:                        <b><u><font color="white">Aug 20, 2024</font></u></b></p>
+                    <hr>
+                    <p class="game-description"style="white-space: pre;">Genres:               <b><u><font color="white">Action, Adventure, RPG</font></u></b></p>
+                    <hr>
+                    <p class="game-description"style="white-space: pre;">Chart:                                       <b><u><font color="white">#9 Top 2024</font></u></b></p>
+                    <hr>
+                </div>
+                <div class="boxes">
+                    
+                    <img src="images/game_covers/wolf.jpg" class="game-covers">
+                    <img src="images/pcpsxbox-bg.png " class="available">
+                    <br>
+                    <p class="game-title">The Wolf Among Us 2</p>
+                    <p class="game-description"style="white-space: pre;">Release date:                        <b><u><font color="white">Dec 31, 2024</font></u></b></p>
+                    <hr>
+                    <p class="game-description"style="white-space: pre;">Genres:                                       <b><u><font color="white">Adventure</font></u></b></p>
+                    <hr>
+                    <p class="game-description"style="white-space: pre;">Chart:                                     <b><u><font color="white">#19 Top 2024</font></u></b></p>
+                    <hr>
+                </div>
+                <div class="boxes">
+                    
+                    <img src="images/game_covers/warhammer.jpg" class="game-covers">
+                    <img src="images/pcpsxbox-bg.png " class="available">
+                    <br>
+                    <p class="game-title">Warhammer 40,000: Space marine II</p>
+                    <p class="game-description"style="white-space: pre;">Release date:                           <b><u><font color="white">Sep 9, 2024</font></u></b></p>
+                    <hr>
+                    <p class="game-description"style="white-space: pre;">Genres:                                              <b><u><font color="white">Action</font></u></b></p>
+                    <hr>
+                    <p class="game-description"style="white-space: pre;">Chart:                                     <b><u><font color="white">#20 Top 2024</font></u></b></p>
+                    <hr>
+                </div>
+                <div class="boxes">
+                    
+                    <img src="images/game_covers/Unknown.jpg" class="game-covers">
+                    <img src="images/pcpsxbox-bg.png " class="available">
+                    <br>
+                    <p class="game-title">Unknown 9: Awakening</p>
+                    <p class="game-description"style="white-space: pre;">Release date:                         <b><u><font color="white">Oct 17, 2024</font></u></b></p>
+                    <hr>
+                    <p class="game-description"style="white-space: pre;">Genres:                         <b><u><font color="white">Action, Adventure</font></u></b></p>
+                    <hr>
+                    <p class="game-description"style="white-space: pre;">Chart:                                     <b><u><font color="white">#43 Top 2024</font></u></b></p>
+                    <hr>
+                </div>
+                
+            </div>
+            <div class="box-container">
+                <div class="boxes">
+                    
+                    <img src="images/game_covers/wukong2.jpg" class="game-covers">
+                    <img src="images/pcpsxbox-bg.png " class="available">
+                    <br>
+                    <p class="game-title">Black Myth: Wukong</p>
+                    <p class="game-description"style="white-space: pre;">Release date:                        <b><u><font color="white">Aug 20, 2024</font></u></b></p>
+                    <hr>
+                    <p class="game-description"style="white-space: pre;">Genres:               <b><u><font color="white">Action, Adventure, RPG</font></u></b></p>
+                    <hr>
+                    <p class="game-description"style="white-space: pre;">Chart:                                       <b><u><font color="white">#9 Top 2024</font></u></b></p>
+                    <hr>
+                </div>
+                <div class="boxes">
+                    
+                    <img src="images/game_covers/wolf.jpg" class="game-covers">
+                    <img src="images/pcpsxbox-bg.png " class="available">
+                    <br>
+                    <p class="game-title">The Wolf Among Us 2</p>
+                    <p class="game-description"style="white-space: pre;">Release date:                        <b><u><font color="white">Dec 31, 2024</font></u></b></p>
+                    <hr>
+                    <p class="game-description"style="white-space: pre;">Genres:                                       <b><u><font color="white">Adventure</font></u></b></p>
+                    <hr>
+                    <p class="game-description"style="white-space: pre;">Chart:                                     <b><u><font color="white">#19 Top 2024</font></u></b></p>
+                    <hr>
+                </div>
+                <div class="boxes">
+                    
+                    <img src="images/game_covers/warhammer.jpg" class="game-covers">
+                    <img src="images/pcpsxbox-bg.png " class="available">
+                    <br>
+                    <p class="game-title">Warhammer 40,000: Space marine II</p>
+                    <p class="game-description"style="white-space: pre;">Release date:                           <b><u><font color="white">Sep 9, 2024</font></u></b></p>
+                    <hr>
+                    <p class="game-description"style="white-space: pre;">Genres:                                              <b><u><font color="white">Action</font></u></b></p>
+                    <hr>
+                    <p class="game-description"style="white-space: pre;">Chart:                                     <b><u><font color="white">#20 Top 2024</font></u></b></p>
+                    <hr>
+                </div>
+                <div class="boxes">
+                    
+                    <img src="images/game_covers/Unknown.jpg" class="game-covers">
+                    <img src="images/pcpsxbox-bg.png " class="available">
+                    <br>
+                    <p class="game-title">Unknown 9: Awakening</p>
+                    <p class="game-description"style="white-space: pre;">Release date:                         <b><u><font color="white">Oct 17, 2024</font></u></b></p>
+                    <hr>
+                    <p class="game-description"style="white-space: pre;">Genres:                         <b><u><font color="white">Action, Adventure</font></u></b></p>
+                    <hr>
+                    <p class="game-description"style="white-space: pre;">Chart:                                     <b><u><font color="white">#43 Top 2024</font></u></b></p>
+                    <hr>
+                </div>
+                
+            </div><div class="box-container">
+                <div class="boxes">
+                    
+                    <img src="images/game_covers/wukong2.jpg" class="game-covers">
+                    <img src="images/pcpsxbox-bg.png " class="available">
+                    <br>
+                    <p class="game-title">Black Myth: Wukong</p>
+                    <p class="game-description"style="white-space: pre;">Release date:                        <b><u><font color="white">Aug 20, 2024</font></u></b></p>
+                    <hr>
+                    <p class="game-description"style="white-space: pre;">Genres:               <b><u><font color="white">Action, Adventure, RPG</font></u></b></p>
+                    <hr>
+                    <p class="game-description"style="white-space: pre;">Chart:                                       <b><u><font color="white">#9 Top 2024</font></u></b></p>
+                    <hr>
+                </div>
+                <div class="boxes">
+                    
+                    <img src="images/game_covers/wolf.jpg" class="game-covers">
+                    <img src="images/pcpsxbox-bg.png " class="available">
+                    <br>
+                    <p class="game-title">The Wolf Among Us 2</p>
+                    <p class="game-description"style="white-space: pre;">Release date:                        <b><u><font color="white">Dec 31, 2024</font></u></b></p>
+                    <hr>
+                    <p class="game-description"style="white-space: pre;">Genres:                                       <b><u><font color="white">Adventure</font></u></b></p>
+                    <hr>
+                    <p class="game-description"style="white-space: pre;">Chart:                                     <b><u><font color="white">#19 Top 2024</font></u></b></p>
+                    <hr>
+                </div>
+                <div class="boxes">
+                    
+                    <img src="images/game_covers/warhammer.jpg" class="game-covers">
+                    <img src="images/pcpsxbox-bg.png " class="available">
+                    <br>
+                    <p class="game-title">Warhammer 40,000: Space marine II</p>
+                    <p class="game-description"style="white-space: pre;">Release date:                           <b><u><font color="white">Sep 9, 2024</font></u></b></p>
+                    <hr>
+                    <p class="game-description"style="white-space: pre;">Genres:                                              <b><u><font color="white">Action</font></u></b></p>
+                    <hr>
+                    <p class="game-description"style="white-space: pre;">Chart:                                     <b><u><font color="white">#20 Top 2024</font></u></b></p>
+                    <hr>
+                </div>
+                <div class="boxes">
+                    
+                    <img src="images/game_covers/Unknown.jpg" class="game-covers">
+                    <img src="images/pcpsxbox-bg.png " class="available">
+                    <br>
+                    <p class="game-title">Unknown 9: Awakening</p>
+                    <p class="game-description"style="white-space: pre;">Release date:                         <b><u><font color="white">Oct 17, 2024</font></u></b></p>
+                    <hr>
+                    <p class="game-description"style="white-space: pre;">Genres:                         <b><u><font color="white">Action, Adventure</font></u></b></p>
+                    <hr>
+                    <p class="game-description"style="white-space: pre;">Chart:                                     <b><u><font color="white">#43 Top 2024</font></u></b></p>
+                    <hr>
+                </div>
+                
+            </div>
+            <div class="box-container">
+                <div class="boxes">
+                    
+                    <img src="images/game_covers/wukong2.jpg" class="game-covers">
+                    <img src="images/pcpsxbox-bg.png " class="available">
+                    <br>
+                    <p class="game-title">Black Myth: Wukong</p>
+                    <p class="game-description"style="white-space: pre;">Release date:                        <b><u><font color="white">Aug 20, 2024</font></u></b></p>
+                    <hr>
+                    <p class="game-description"style="white-space: pre;">Genres:               <b><u><font color="white">Action, Adventure, RPG</font></u></b></p>
+                    <hr>
+                    <p class="game-description"style="white-space: pre;">Chart:                                       <b><u><font color="white">#9 Top 2024</font></u></b></p>
+                    <hr>
+                </div>
+                <div class="boxes">
+                    
+                    <img src="images/game_covers/wolf.jpg" class="game-covers">
+                    <img src="images/pcpsxbox-bg.png " class="available">
+                    <br>
+                    <p class="game-title">The Wolf Among Us 2</p>
+                    <p class="game-description"style="white-space: pre;">Release date:                        <b><u><font color="white">Dec 31, 2024</font></u></b></p>
+                    <hr>
+                    <p class="game-description"style="white-space: pre;">Genres:                                       <b><u><font color="white">Adventure</font></u></b></p>
+                    <hr>
+                    <p class="game-description"style="white-space: pre;">Chart:                                     <b><u><font color="white">#19 Top 2024</font></u></b></p>
+                    <hr>
+                </div>
+                <div class="boxes">
+                    
+                    <img src="images/game_covers/warhammer.jpg" class="game-covers">
+                    <img src="images/pcpsxbox-bg.png " class="available">
+                    <br>
+                    <p class="game-title">Warhammer 40,000: Space marine II</p>
+                    <p class="game-description"style="white-space: pre;">Release date:                           <b><u><font color="white">Sep 9, 2024</font></u></b></p>
+                    <hr>
+                    <p class="game-description"style="white-space: pre;">Genres:                                              <b><u><font color="white">Action</font></u></b></p>
+                    <hr>
+                    <p class="game-description"style="white-space: pre;">Chart:                                     <b><u><font color="white">#20 Top 2024</font></u></b></p>
+                    <hr>
+                </div>
+                <div class="boxes">
+                    
+                    <img src="images/game_covers/Unknown.jpg" class="game-covers">
+                    <img src="images/pcpsxbox-bg.png " class="available">
+                    <br>
+                    <p class="game-title">Unknown 9: Awakening</p>
+                    <p class="game-description"style="white-space: pre;">Release date:                         <b><u><font color="white">Oct 17, 2024</font></u></b></p>
+                    <hr>
+                    <p class="game-description"style="white-space: pre;">Genres:                         <b><u><font color="white">Action, Adventure</font></u></b></p>
+                    <hr>
+                    <p class="game-description"style="white-space: pre;">Chart:                                     <b><u><font color="white">#43 Top 2024</font></u></b></p>
+                    <hr>
+                </div>
+                
+            </div>
+           
         </div>
     </div>
 </body>

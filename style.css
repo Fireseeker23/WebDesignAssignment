@@ -1,0 +1,162 @@
+body {
+    background-color: rgb(22, 22, 22);
+    color: white;
+    margin: 0; 
+}
+
+.container {
+    display: flex; 
+    height: 100vh; 
+}
+
+.sidebar {
+    margin-top: 110px;
+    width: 200px; 
+    color: white; 
+    padding: 20px; 
+}
+.sidebar-heading {
+    height:20px;
+    font-weight: bold;
+    font-family: 'calibri';
+    font-size:30px;
+}
+.sidebar-text{
+    font-family: 'calibri';
+    font-size:20px;
+}
+.sidebar-icon{
+    width: 20px; 
+    height: 20px; 
+    vertical-align: middle;
+    border-radius: 5px;
+    margin-right:3px;
+
+}
+
+.search-bar {
+    width: 900px; 
+    height: 50px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    background: url('images/search_icon_inverted.png') no-repeat 8px center;
+    color: white;
+    flex:1;
+}
+
+.search-bar-div { 
+    display:flex;
+    margin-left:250px;
+    width: 1200px;   
+}
+.search-bar:focus{
+    outline: none;
+    background: url('images/search_icon.png') no-repeat 8px center;
+    background-color:white;
+    color:black;
+    
+}
+.login{
+    width:50px; 
+    margin-left: 50px;
+    margin-top:10px;
+    text-align: right;
+    font-family: 'calibri';
+    font-size:20px;
+    font-weight: bold;
+}
+
+.logo {
+    display:flex;
+    width:10px;
+    height:10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-family: 'Courier New', monospace;
+}
+
+.ws-heading {
+    margin-top: 50px;
+    font-family: 'Courier New', monospace;
+    font-size: 80px;
+    margin-bottom:50px;
+}
+
+.main-content {
+    flex: 1; 
+    padding: 20px; 
+    color: rgb(255, 255, 255); 
+}
+
+.boxes{
+    width:270px;
+    height:500px;
+    font-family: calibri;
+    border-radius: 5px;
+    margin:0;
+    margin-bottom:50px;
+    font-family: 'calibri';
+    font-size:20px;
+    font-weight: bold;
+    background-color:rgb(50, 48, 48);
+    border-radius: 50px;
+    transition: 0.5s;
+    }
+.boxes:hover{
+    background-color:rgb(80, 78, 78);
+    border-color: antiquewhite;
+    transition: 0.5s;
+    height:503px;
+    width:273px;
+    }
+    .boxes:hover .game-covers{
+        width:273px;
+        transition: 0.5s;
+    }
+.box-container{
+    display:flex;
+    padding:10px;
+    gap: 55px;
+    }
+.game-covers{
+    width:270px;
+    height:150px;
+    margin:0px;
+    padding:0px;
+    border-top-left-radius: 50px;  
+    border-top-right-radius: 50px;
+    transition: 0.5s;
+}
+.available{
+    margin:0px;
+    margin-left:5px;
+    padding:0px;
+
+}
+.game-title{
+    font-size:30px;
+    width:200px;
+    margin:10px;
+}
+.game-description{
+    margin-left:12px;
+    height:10px;
+    width: 250px;
+    margin-top:20px;
+    font-size:15px; 
+    color:#ccc
+}
+
+hr {
+    border: none;           
+    border-top: 1px solid #908383;  
+    color: #908383;             
+    background-color: #908383;  
+    height: 1px;
+    width: 90%;              
+    margin: 20px auto;       
+}
