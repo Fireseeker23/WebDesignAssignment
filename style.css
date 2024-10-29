@@ -24,6 +24,14 @@ body {
 .sidebar-text{
     font-family: 'calibri';
     font-size:20px;
+    transition: 0.5s;
+}
+.sidebar-text:hover{
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    transition: 0.5s;
+    border-radius: 50px;
+    font-weight:bold;
 }
 .sidebar-icon{
     width: 20px; 
@@ -46,6 +54,7 @@ body {
     background: url('images/search_icon_inverted.png') no-repeat 8px center;
     color: white;
     flex:1;
+    transition:0.5s;
 }
 
 .search-bar-div { 
@@ -56,8 +65,9 @@ body {
 .search-bar:focus{
     outline: none;
     background: url('images/search_icon.png') no-repeat 8px center;
-    background-color:white;
+    background-color:rgb(218, 218, 218);
     color:black;
+    transition:0.5s;
     
 }
 .login{
@@ -69,7 +79,20 @@ body {
     font-size:20px;
     font-weight: bold;
 }
-
+.signup{
+    width:70px; 
+    height:30px;
+    margin-left: 50px;
+    margin-top:10px;
+    text-align: center;
+    font-family: 'calibri';
+    font-size:20px;
+    font-weight: bold;
+}
+.signup:hover,.login:hover{
+    text-decoration: underline;
+    transition: 0.5s;
+}
 .logo {
     display:flex;
     width:10px;
