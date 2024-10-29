@@ -1,4 +1,8 @@
-
+body {
+    background: linear-gradient(to bottom, #000000, #112644);
+    color: white;
+    margin: 0;
+}
 .gamename{
     padding-top: 100px;
     padding-left: 30px;
