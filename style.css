@@ -182,3 +182,71 @@ hr {
     width: 90%;              
            
 }
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+/* signup/login */
+
+.signup-heading{
+    margin-left:250px;
+    margin-top: 80px;
+    font-family:calibri;
+    
+}
+
+.input-boxes-div{
+    margin-left:250px;
+}
+.input-boxes{
+    font-size:20px;
+    color:bisque;
+    background-color: black;
+    border:none;
+    padding:20px;
+    border-radius:10px;
+}
+.submit-button{
+    font-size:20px;
+    padding:20px;
+    width:291px;
+    border-radius:10px;
+}
+.p1{
+    margin-left:285px;
+    font-family:calibri;
+    color:#ffffff
+}
+.p2{
+    font-family:calibri;
+    margin-left:180px;
+    font-weight:bold;
+    color:antiquewhite
+}
+.p3{
+    margin-left:310px;
+    font-family:calibri;
+    color:#ffffff
+
+}
+
