@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Lexend' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="review-styles.css">
+    <title>Gamify</title>
+    <style>
+        .ws-heading{
+            font-family:Lexend;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <a href="home_page.html"><h1>Gamify</h1></a>
+    </div>
+    
+    <div class="search-bar-div">
+        <input type="text" placeholder="Search for games" class="search-bar">
+        <div class="signup"><a href=signup.html>SIGNUP</a></div>
+        <div class="login"><a href=login.html>LOGIN</a></div>
+    </div>
+        
+
+    <div class="container">
+
+
+        <div class="sidebar">
+            <div class="reviews">
+                <a href = "reviews.html">
+                <b>Reviews</b>
+                </a>
+
+            </div>
+            <div class="side-bar-heading">
+                <p class="sidebar-heading">Popular</p>
+                <a href="sidebar/1last30.html"><p class="sidebar-text"><img src="images/star-bg.png" class='sidebar-icon'>Last 30 Days</p></a>
+                <a href="sidebar/2thisweek.html"><p class="sidebar-text"><img src="images/fire-bg.png" class='sidebar-icon'>This week</p></a>
+
+            </div>
+            <div class="side-bar-heading">
+                <p class="sidebar-heading">Top</p>
+                <a href="sidebar/4boty.html"><p class="sidebar-text"><img src="images/trophy-bg.png" class='sidebar-icon'>Best of the year</p></a>
+                <a href="sidebar/5popular2023.html"><p class="sidebar-text"><img src="images/bar-bg.png" class='sidebar-icon'>Popular in 2023</p></a>
+                <a href="sidebar/6alltime.html"><p class="sidebar-text"><img src="images/crown-bg.png" class='sidebar-icon'>All time top </p></a>
+            </div>
+            <div class="side-bar-heading">
+                <p class="sidebar-heading">Platforms</p>
+                <a href="sidebar/7pc.html"><p class="sidebar-text"><img src="images/pc-bg.png" class='sidebar-icon'>PC</p></a>
+                <a href="sidebar/8ps4.html"><p class="sidebar-text"><img src="images/ps4-bg.png" class='sidebar-icon'>PlayStation4</p></a>
+                <a href="sidebar/9xbox.html"><p class="sidebar-text"><img src="images/xbox-bg.png" class='sidebar-icon'>Xbox One</p></a>
+            </div>
+
+        </div>
+
+                <div class="review">
+                    <div class="ws-heading" style="color: white;">
+                        Write a review 
+                    </div>
+        
+                    <form class="review-form">
+                        <div class="form-group">
+                            <label for="name"></label>
+                            <input type="text" id="name" name="name" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email"></label>
+                            <input type="email" id="email" name="email" placeholder="Game" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="rating"></label>
+                            <select id="rating" name="rating" required>
+                                <option value="">Rating</option>
+                                <option value="5">⭐⭐⭐⭐⭐ </option>
+                                <option value="4">⭐⭐⭐⭐ </option>
+                                <option value="3">⭐⭐⭐ </option>
+                                <option value="2">⭐⭐ </option>
+                                <option value="1">⭐ </option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="review"></label>
+                            <textarea id="review" name="review" rows="5" placeholder="Write your review here..." required></textarea>
+                        </div>
+                        <button type="submit">Submit Review</button>
+                    </form>
+                </div>
+
+            </body>
+            </html>

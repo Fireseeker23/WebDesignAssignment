@@ -110,7 +110,6 @@ body {
 }
 
 .main-content {
-    flex: 1; 
     padding: 20px; 
     color: rgb(255, 255, 255); 
 }
@@ -205,6 +204,14 @@ a:link {
     background-color: transparent;
     text-decoration: none;
   }
+
+.reviews{
+    font-size: 30px;
+    font-family: Calibri
+}
+.reviews:hover{
+    text-decoration: underline;
+}
 
 /* signup/login */
 
